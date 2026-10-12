@@ -52,7 +52,8 @@ Results from material transportation and panel installation construction scenari
 
 ## ⚙️ Installation
 
-# Environment Setup
+## Environment Setup
+```bash
 conda create -n colla_humanoid python=3.8
 conda activate colla_humanoid
 pip install pip==24.0 setuptools==59.5.0 wheel==0.41.3
@@ -76,6 +77,7 @@ export CUDA_HOME=/usr/local/cuda-11.3  # Adjust if the toolkit is installed else
 export PATH="$CUDA_HOME/bin:$PATH"
 export CC=gcc-9 CXX=g++-9
 pip install --no-build-isolation --no-deps "git+https://github.com/facebookresearch/pytorch3d.git@v0.6.2"
+```
 
 The study evaluates humanoid policies in **Isaac Gym** and **MuJoCo**, with physical collaboration demonstrated on a **Unitree G1** humanoid robot. Simulator configuration and robot-specific setup instructions will accompany the relevant modules.
 
