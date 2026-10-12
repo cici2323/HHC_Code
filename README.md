@@ -79,8 +79,6 @@ export CC=gcc-9 CXX=g++-9
 pip install --no-build-isolation --no-deps "git+https://github.com/facebookresearch/pytorch3d.git@v0.6.2"
 ```
 
-The study evaluates humanoid policies in **Isaac Gym** and **MuJoCo**, with physical collaboration demonstrated on a **Unitree G1** humanoid robot. Simulator configuration and robot-specific setup instructions will accompany the relevant modules.
-
 ---
 
 ## 🗂️ Data Preparation
