@@ -11,7 +11,7 @@
 
 <!-- Figure 1 from the accompanying manuscript. -->
 <p align="center">
-  <img src="assets/colla_box.png" width="100%" alt="One deployment scenario for pose-aware human-humanoid collaboration in construction"/>
+  <img src="assets/colla_deployment.png" width="100%" alt="One deployment scenario for pose-aware human-humanoid collaboration in construction"/>
 </p>
 
 This is the official repository for **Pose-aware Human-Humanoid Collaboration in Construction**. Our method integrates **BRACE-Net for occlusion-robust human pose reconstruction and ergonomic-risk assessment** with a **teacher-student-adaptation reinforcement learning framework** for learning and executing worker-preferred humanoid assistance.
