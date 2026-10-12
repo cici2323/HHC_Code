@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Calibrated G1 support points and robot sphere occupancy",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "support_points",
+    "robot_spheres"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "support_points": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "body",
+          "offset"
+        ],
+        "properties": {
+          "body": {
+            "type": "string",
+            "minLength": 1
+          },
+          "offset": {
+            "type": "array",
+            "items": {
+              "type": "number"
+            },
+            "minItems": 3,
+            "maxItems": 3
+          }
+        }
+      },
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "robot_spheres": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "body",
+          "offset",
+          "radius"
+        ],
+        "properties": {
+          "body": {
+            "type": "string",
+            "minLength": 1
+          },
+          "offset": {
+            "type": "array",
+            "items": {
+              "type": "number"
+            },
+            "minItems": 3,
+            "maxItems": 3
+          },
+          "radius": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          }
+        }
+      },
+      "minItems": 1
+    }
+  },
+  "description": "Body-local offsets and positive sphere radii in metres. Calibrate for your robot; no dimensions are supplied as measured data."
+}

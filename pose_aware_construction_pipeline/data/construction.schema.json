@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Measured construction support and workspace configurations",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "frame",
+    "samples"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "frame": {
+      "const": "environment"
+    },
+    "samples": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "support_points",
+          "human_workspace_boxes"
+        ],
+        "properties": {
+          "support_points": {
+            "type": "array",
+            "items": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "minItems": 3,
+              "maxItems": 3
+            },
+            "minItems": 2,
+            "maxItems": 2
+          },
+          "human_workspace_boxes": {
+            "type": "array",
+            "items": {
+              "type": "array",
+              "items": {
+                "type": "array",
+                "items": {
+                  "type": "number"
+                },
+                "minItems": 3,
+                "maxItems": 3
+              },
+              "minItems": 2,
+              "maxItems": 2
+            },
+            "minItems": 1
+          }
+        }
+      }
+    }
+  },
+  "description": "Metres. The loader also enforces finite numbers, min<max on every box axis, and constant box count across samples."
+}

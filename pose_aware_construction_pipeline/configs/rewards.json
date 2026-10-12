@@ -1,0 +1,25 @@
+{
+  "motion_weights": {
+    "dof": 5.0, "keypoint": 4.0, "root_velocity": 6.0,
+    "root_angular_velocity": 3.0, "heading": 3.0, "height": 2.0,
+    "body_rotation": 3.0
+  },
+  "motion_scales": {
+    "dof": 0.25, "keypoint": 0.25, "root_velocity": 4.0,
+    "root_angular_velocity": 2.0, "heading": 2.0, "height": 10.0,
+    "body_rotation": 2.0
+  },
+  "adaptation_tracking_weight": 0.2,
+  "collaboration": {
+    "support_weight": 5.0, "workspace_weight": 3.0,
+    "stability_weight": 1.5, "slip_weight": 0.05,
+    "support_tolerance": 0.02, "support_scale": 0.05
+  },
+  "regularization": {
+    "alive": 3.0, "orientation": -4.0, "dof_acc": -0.0000003,
+    "action_rate": -0.1, "dof_error": -0.1, "feet_stumble": -2.0,
+    "dof_pos_limits": -10.0, "feet_air_time": 10.0,
+    "feet_force": -0.003, "ankle_action": -0.1,
+    "waist_roll_pitch_error": -0.5
+  }
+}
