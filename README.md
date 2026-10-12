@@ -52,7 +52,46 @@ Results from material transportation and panel installation construction scenari
 
 ## ⚙️ Installation
 
-*Coming soon.* The environment configuration, tested dependency versions, and setup commands will be provided with the code release.
+The following is the inherited Python 3.8 / PyTorch 1.10 setup, expanded with
+dependencies imported by this pipeline. It is a starting recipe from the
+[upstream setup](docs/upstream_exbody2.md); a clean Linux/GPU installation and
+full simulator training have not been validated for this copy.
+
+```bash
+cd /path/to/pose_aware_construction_pipeline
+
+conda create -n pose_collab python=3.8 -y
+conda activate pose_collab
+
+python -m pip install "setuptools==59.5.0" "numpy<1.24"
+python -m pip install torch==1.10.0+cu113 torchvision==0.11.1+cu113 torchaudio==0.10.0+cu113 \
+  -f https://download.pytorch.org/whl/cu113/torch_stable.html
+
+# Replace this path with your extracted Isaac Gym installation.
+python -m pip install -e /absolute/path/to/isaacgym/python
+
+python -m pip install "numpy<1.24" scipy matplotlib PyYAML dill \
+  pydelatin pyfqmr tqdm opencv-python wandb tensorboard ipdb flask gdown
+python -m pip install -e ./rsl_rl
+python -m pip install -e ./legged_gym
+```
+
+Install the packages from **this folder**, even if another `Paper_1_try` copy is
+already installed. The launcher also prioritizes this copy's package paths.
+W&B logging is disabled by the launcher, but the inherited code still imports
+`wandb`, so the package is needed. The separate `ASE/requirements.txt` belongs
+to the upstream ASE workflow; it is not the installation recipe for this CLI.
+
+Check the environment:
+
+```bash
+# Isaac Gym must be imported before Torch.
+python -c "import isaacgym; import torch; print('PyTorch:', torch.__version__); print('CUDA available:', torch.cuda.is_available())"
+python pipeline.py --help
+```
+
+CUDA should report `True` for GPU training. The help command itself does not
+require Isaac Gym or Torch.
 
 The study evaluates humanoid policies in **Isaac Gym** and **MuJoCo**, with physical collaboration demonstrated on a **Unitree G1** humanoid robot. Simulator configuration and robot-specific setup instructions will accompany the relevant modules.
 
