@@ -147,7 +147,8 @@ The demonstrated construction scenarios are **material transportation**, where t
 <details>
 <summary><b>Click to expand</b></summary>
 
-*Coming soon.* The main documents for the teacher-student adaptation policy have been uploaded, and the installation and code-running processes will be updated later.
+*Coming soon.* The full pipeline regarding how to run the teacher-student-adaptation policy will be released soon.
+
 ### BRACE-Net
 
 Train the visibility-aware refinement network using human/object unsigned-distance supervision and body-part correspondence labels. The learned geometric and anatomical cues guide refinement of the initial SMPL reconstruction before REBA-based ergonomic scoring.
