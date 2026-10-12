@@ -11,7 +11,7 @@
 
 <!-- Figure 1 from the accompanying manuscript. -->
 <p align="center">
-  <img src="assets/system_overview.png" width="100%" alt="Overview of pose-aware human-humanoid collaboration in construction"/>
+  <img src="assets/colla_box.png" width="100%" alt="One deployment scenario for pose-aware human-humanoid collaboration in construction"/>
 </p>
 
 This is the official repository for **Pose-aware Human-Humanoid Collaboration in Construction**. Our method integrates **BRACE-Net for occlusion-robust human pose reconstruction and ergonomic-risk assessment** with a **teacher-student-adaptation reinforcement learning framework** for learning and executing worker-preferred humanoid assistance.
@@ -41,7 +41,7 @@ Results from material transportation and panel installation construction scenari
 
 <!-- Figure 3 from the accompanying manuscript. -->
 <p align="center">
-  <img src="assets/method.png" width="100%" alt="Ergonomics-driven workflow for assistance triggering, collaborative skill learning, and humanoid-assisted task execution"/>
+  <img src="assets/system_overview.png" width="100%" alt="Ergonomics-driven workflow for assistance triggering, collaborative skill learning, and humanoid-assisted task execution"/>
 </p>
 
 **When to assist.** BRACE-Net combines HybrIK-X pose initialization with visibility-aware SMPL refinement and REBA-based ergonomic assessment. Hysteresis and temporal persistence distinguish sustained ergonomic risk from transient posture fluctuations.
