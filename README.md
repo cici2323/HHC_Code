@@ -156,11 +156,6 @@ The main documentation for the teacher–student adaptation policy has been uplo
 
 Train the visibility-aware refinement network using human/object unsigned-distance supervision and body-part correspondence labels. The learned geometric and anatomical cues guide refinement of the initial SMPL reconstruction before REBA-based ergonomic scoring.
 
-#### Human-to-Humanoid Retargeting
-
-The human-to-humanoid motion retargeting pipeline is adopted from
-[ExBody2](https://github.com/edpsw/exbody2).
-
 ### Humanoid collaborative policy learning
 
 1. **Teacher-policy training.** Use PPO to learn humanoid actions from retargeted worker demonstrations. The teacher receives privileged simulation observations and is optimized using risk-weighted motion-tracking, stability, and regularization rewards.
