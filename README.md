@@ -19,6 +19,7 @@
   <img src="assets/demo3.gif" width="24%" />
   <img src="assets/demo4.gif" width="24%" />
 </p>
+
 This is the official repository for **Pose-aware Human-Humanoid Collaboration in Construction**. Our method integrates **BRACE-Net for occlusion-robust human pose reconstruction and ergonomic-risk assessment** with a **teacher-student-adaptation reinforcement learning framework** for learning and executing worker-preferred humanoid assistance.
 
 > **Code release: coming soon.** Code, pre-trained checkpoints, and evaluation scripts are planned for release.
