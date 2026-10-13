@@ -159,7 +159,7 @@ Train the visibility-aware refinement network using human/object unsigned-distan
 #### Human-to-Humanoid Retargeting
 
 The human-to-humanoid motion retargeting pipeline is adopted from
-[ExBody2](https://github.com/edpsw/exbody2.
+[ExBody2](https://github.com/edpsw/exbody2).
 
 ### Humanoid collaborative policy learning
 
