@@ -16,7 +16,7 @@
 
 This is the official repository for **Pose-aware Human-Humanoid Collaboration in Construction**. Our method integrates **BRACE-Net for occlusion-robust human pose reconstruction and ergonomic-risk assessment** with a **teacher-student-adaptation reinforcement learning framework** for learning and executing worker-preferred humanoid assistance.
 
-> **Code release: coming soon.** Code, pre-trained checkpoints, and evaluation scripts are planned for release. Release updates will be announced on the [project website](https://cici2323.github.io/Pose-aware-human-humanoid-collaboration/).
+> **Code release: coming soon.** Code, pre-trained checkpoints, and evaluation scripts are planned for release.
 
 ---
 
@@ -96,10 +96,7 @@ The study uses three datasets with complementary roles:
 
 Data preparation covers RGB observations, human/object masks, SMPL body representations, ergonomic annotations, and humanoid reference motions obtained through motion retargeting. Preprocessing scripts and the required file formats will be documented with the release.
 
-**Data splits.** All frames and derived samples from the same recording are kept in a single partition. The study uses approximate recording-level proportions of **64% training, 16% validation, and 20% testing**.
-
-**Data access.** As stated in the paper, raw and processed research data are available from the corresponding author upon reasonable request. Public release of the code does not imply that all datasets are included in this repository; dataset-specific access instructions will be provided separately.
-
+**Data access.** As stated in the paper, the complete raw and processed research data are available from the corresponding author upon reasonable request. A small set of sample data is included in this repository to facilitate code testing and demonstration. Please note that these samples represent only a subset of the data used in the study; access to the complete datasets can be requested separately.
 </details>
 
 ---
@@ -221,4 +218,4 @@ Citation information and a formatted BibTeX entry will be added with the public 
 
 ## 📬 Contact
 
-For questions or reasonable requests for research data and code, please contact **Yizhi Liu** at [yliu580@syr.edu](mailto:yliu580@syr.edu).
+For questions or reasonable requests for research data and code, please contact Dr. **Yizhi Liu** at [yliu580@syr.edu](mailto:yliu580@syr.edu).
