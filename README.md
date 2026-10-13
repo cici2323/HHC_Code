@@ -22,7 +22,7 @@ This is the official repository for **Pose-aware Human-Humanoid Collaboration in
 
 ## 📦 Release To-Do List
 
-- [✅] **Environment Setup**: dependency specifications, simulator setup, and installation instructions.
+- [x] **Environment Setup**: dependency specifications, simulator setup, and installation instructions.
 - [ ] **Data Preparation**: preprocessing for human pose reconstruction, ergonomic assessment, and SMPL-to-humanoid motion retargeting.
 - [ ] **BRACE-Net**: training and inference code for visibility-aware pose refinement and REBA-based assessment.
 - [ ] **Policy Learning**: teacher-policy training, student-policy distillation, and human-aware residual adaptation.
