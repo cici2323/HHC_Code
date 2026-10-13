@@ -104,7 +104,7 @@ Data preparation covers RGB observations, human/object masks, SMPL body represen
 
 ---
 
-## 📥 Pre-trained Models
+<!--## 📥 Pre-trained Models
 
 *Coming soon.* The planned checkpoint release covers the following components:
 
@@ -141,13 +141,14 @@ The demonstrated construction scenarios are **material transportation**, where t
 </details>
 
 ---
+-->
 
 ## 🏋️ Training
 
 <details>
 <summary><b>Click to expand</b></summary>
 
-*Coming soon.* The full pipeline regarding how to run the teacher-student-adaptation policy will be released soon.
+*Coming soon.* The main documentation for the teacher–student adaptation policy has been uploaded. Tutorials on installation and running the training process will be updated soon.
 
 ### BRACE-Net
 
