@@ -14,10 +14,10 @@
   <img src="assets/colla_deployment.png" width="70%" alt=" Test scenarios for pose-aware human-humanoid collaboration in construction"/>
 </p>
 <p align="center">
-  <img src="assets/gifs/demo1.gif" width="24%" />
-  <img src="assets/gifs/demo2.gif" width="24%" />
-  <img src="assets/gifs/demo3.gif" width="24%" />
-  <img src="assets/gifs/demo4.gif" width="24%" />
+  <img src="assets/demo1.gif" width="24%" />
+  <img src="assets/demo2.gif" width="24%" />
+  <img src="assets/demo3.gif" width="24%" />
+  <img src="assets/demo4.gif" width="24%" />
 </p>
 <p align="center">
   <img src="assets/demo1.gif" width="48%" />
