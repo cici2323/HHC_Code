@@ -66,7 +66,7 @@ pip3 install torch==1.10.0+cu113 torchvision==0.11.1+cu113 torchaudio==0.10.0+cu
 
 git clone https://github.com/cici2323/HHC_Code.git colla_humanoid
 cd colla_humanoid
-pip install -r requirements/environment.txt
+pip install -r environment.txt
 
 # Download Isaac Gym Preview 4 from https://developer.nvidia.com/isaac-gym
 # Extract it into this repository as isaacgym/.
