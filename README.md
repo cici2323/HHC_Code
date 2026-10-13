@@ -25,17 +25,6 @@ This is the official repository for **Pose-aware Human-Humanoid Collaboration in
 
 ---
 
-## 📦 Code Release To-Do List
-
-- [x] **Environment Setup**: dependency specifications, simulator setup, and installation instructions.
-- [ ] **Data Preparation**: preprocessing for human pose reconstruction, ergonomic assessment, and SMPL-to-humanoid motion retargeting.
-- [ ] **BRACE-Net**: training and inference code for visibility-aware pose refinement and REBA-based assessment.
-- [ ] **Policy Learning**: teacher-policy training, student-policy distillation, and human-aware residual adaptation.
-- [ ] **Pre-trained Models**: checkpoints for BRACE-Net and the teacher, student, and residual policies.
-- [ ] **Evaluation**: perception evaluation, Isaac Gym / MuJoCo motion-tracking evaluation, and collaborative-performance analysis.
-
----
-
 ## 📄 Abstract
 
 Humanoid robots hold the promise of becoming versatile physical collaborators that assist people across diverse tasks. In construction, this capability could address productivity and safety challenges by supporting workers during physically demanding operations. However, effective collaboration requires more than independent task execution: robots need to recognize when assistance is needed and coordinate their actions with human partners toward shared goals.
@@ -52,6 +41,17 @@ Results from material transportation and panel installation construction scenari
 **When to assist.** BRACE-Net combines HybrIK-X pose initialization with visibility-aware SMPL refinement and REBA-based ergonomic assessment. Hysteresis and temporal persistence distinguish sustained ergonomic risk from transient posture fluctuations.
 
 **How to assist.** Worker demonstrations are reconstructed and retargeted to the humanoid, learned through teacher-policy training and student-policy distillation, and adapted through bounded residual corrections to meet the worker's support and workspace requirements.
+
+---
+
+## 📦 Code Release To-Do List
+
+- [x] **Environment Setup**: dependency specifications, simulator setup, and installation instructions.
+- [ ] **Data Preparation**: preprocessing for human pose reconstruction, ergonomic assessment, and SMPL-to-humanoid motion retargeting.
+- [ ] **BRACE-Net**: training and inference code for visibility-aware pose refinement and REBA-based assessment.
+- [ ] **Policy Learning**: teacher-policy training, student-policy distillation, and human-aware residual adaptation.
+- [ ] **Pre-trained Models**: checkpoints for BRACE-Net and the teacher, student, and residual policies.
+- [ ] **Evaluation**: perception evaluation, Isaac Gym / MuJoCo motion-tracking evaluation, and collaborative-performance analysis.
 
 ---
 
