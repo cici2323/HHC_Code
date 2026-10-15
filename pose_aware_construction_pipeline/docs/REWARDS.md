@@ -73,5 +73,4 @@ available for comparison with their original reward functions.
 
 Change coefficients in a copy of the JSON and pass `--reward-config path.json`.
 Resume rejects a different saved reward configuration; start a new experiment
-when changing the objective. Units, frames, reward composition and defaults are
-covered by analytical CPU tests and simulator-independent integration tests.
+when changing the objective.
