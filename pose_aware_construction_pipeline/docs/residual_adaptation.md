@@ -256,8 +256,6 @@ both policies stay fixed during physical evaluation.
 
 ## Validation
 
-CPU tests need Python, NumPy, and PyTorch, but no Isaac Gym:
-
 ```bash
 PYTHONPATH=rsl_rl python -m unittest discover -s tests -v
 ```
@@ -267,9 +265,3 @@ invariance, exact initial deterministic behavior, radian bounds/action scaling,
 latent likelihood replay, GAE terminal/timeout cases, complete minibatch
 coverage, strict loading, checkpoint resume, and integration with the real
 legacy student architecture in a synthetic vector environment.
-
-The local run passed 39 tests using Python3.11 / PyTorch2.10 on CPU. The code uses
-Python3.8-compatible syntax and APIs intended to work with the upstream
-PyTorch1.10 stack; that legacy runtime and Linux/CUDA/Isaac Gym simulation have
-not been exercised here. Synthetic test checkpoints are random fixtures and
-are not trained robot policies.
