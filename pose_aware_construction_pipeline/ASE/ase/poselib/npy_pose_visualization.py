@@ -35,10 +35,8 @@ from poselib.visualization.common import plot_skeleton_state, plot_skeleton_moti
 
 # motion = SkeletonMotion.from_file("data/npy/37_Cradle_carry.npy")
 # Load the motion from the .npy file
-# motion = SkeletonMotion.from_file("data/retarget_npy/01_dance.npy")
+
 motion = SkeletonMotion.from_file("data/g1_retarget_npy/virtual_hold_panel_wall_3.npy")
-#motion = SkeletonMotion.from_file("retarget_npy/81_05.npy")
-#motion = SkeletonMotion.from_file("data/npy/81_05.npy")
 
 # Visualize the motion interactively
 plot_skeleton_motion_interactive(motion)
