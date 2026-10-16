@@ -36,12 +36,12 @@ import sys
 
 # source fbx file path
 file_name = sys.argv[1]
-fbx_file = f"data/fbx/{file_name}.fbx"  # cmu_fbx_all
+fbx_file = f"data/fbx/{file_name}.fbx" 
 
 # import fbx file - make sure to provide a valid joint name for root_joint
 motion = SkeletonMotion.from_fbx(
     fbx_file_path=fbx_file,
-    root_joint="_1:Hips",  # for CMU: Hips
+    root_joint="_1:Hips",
     fps=60
 )
 print("*"*30 + " Nodes " + "*"*30)
