@@ -99,9 +99,47 @@ The study uses three datasets with complementary roles:
 | **HCTL** - Humanoid Construction Task Learning | Construction-specific human motions. |
 | **CHOI** - Construction Human-Object Interaction | Human-object interaction sequences for visibility-aware body reconstruction and collaborative motion learning. |
 
-Data preparation covers RGB observations, human/object masks, SMPL body representations, ergonomic annotations, and humanoid reference motions obtained through motion retargeting. Preprocessing scripts and the required file formats will be documented with the release.
+Data preparation covers RGB observations, human/object masks, SMPL body representations, ergonomic annotations, and humanoid reference motions obtained through motion retargeting.
+
+### Human-to-Humanoid Motion Retargeting
+
+The human-to-humanoid motion retargeting pipeline is adopted from [ExBody2](https://github.com/edpsw/exbody2). Human motion sequences are first imported into the PoseLib-compatible format and then retargeted to generate humanoid reference motions.
+
+**1. Import motions**
+
+Navigate to the PoseLib directory and import the human motion sequences:
+
+```bash
+cd ASE/ase/poselib
+python fbx_importer_all.py
+```
+
+The imported motions are converted and stored in:
+
+```text
+ASE/ase/poselib/data/npy
+```
+
+**2. Retarget motions**
+
+Create the output directories and run the motion-retargeting script:
+
+```bash
+cd ASE/ase/poselib
+mkdir -p pkl retarget_npy
+python retarget_motion_h1_all.py
+```
+
+The retargeted humanoid motions will be saved to:
+
+```text
+ASE/ase/poselib/data/retarget_npy
+```
+
+These retargeted motions are used as reference motions for subsequent humanoid policy learning.
 
 **Data access.** As stated in the paper, the complete raw and processed research data are available from the corresponding author upon reasonable request. A small set of sample data is included in this repository to facilitate code testing and demonstration. Please note that these samples represent only a subset of the data used in the study; access to the complete datasets can be requested separately.
+
 </details>
 
 ---
