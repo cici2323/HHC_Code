@@ -1,0 +1,16 @@
+motions:
+  root: "/home/yanxi/expressive-humanoid-new/ASE/ase/poselib/data/g1_retarget_npy/"
+  'virtual_pick_up_box':
+    description: virtual_pick_up_box
+    difficulty: 1
+    trim_beg: -1
+    trim_end: -1
+    weight: 1.0
+  # root: "../retarget_npy/"
+  # '49_dragging_a_cart':
+  #   description: 49_dragging_a_cart
+  #   difficulty: 1
+  #   trim_beg: -1
+  #   trim_end: -1
+  #   weight: 1.0
+
