@@ -1,0 +1,36 @@
+{
+  "motions_yaml": "data/configs/motions.yaml",
+  "source_motion": "data/npy",
+  "target_motion_path": "data/g1_retarget_npy",
+  "source_tpose": "data/tpose/optitrack_tpose.npy",
+  "target_tpose": "data/tpose/g1_tpose.npy",
+  "joint_mapping": {
+    "skeleton003_Hips": "pelvis",
+    "skeleton003_Spine1": "waist_yaw_link",
+    
+    "skeleton003_LeftArm": "left_shoulder_pitch_link",
+    "skeleton003_LeftForeArm": "left_elbow_link",
+    "skeleton003_LeftHand": "left_wrist_roll_link",
+    
+    "skeleton003_RightArm": "right_shoulder_pitch_link",
+    "skeleton003_RightForeArm": "right_elbow_link",
+    "skeleton003_RightHand": "right_wrist_roll_link",
+    
+    "skeleton003_LeftUpLeg": "left_hip_pitch_link",
+    "skeleton003_LeftLeg": "left_knee_link",
+    "skeleton003_LeftFoot": "left_ankle_pitch_link",
+    
+    "skeleton003_RightUpLeg": "right_hip_pitch_link",
+    "skeleton003_RightLeg": "right_knee_link",
+    "skeleton003_RightFoot": "right_ankle_pitch_link"
+  },
+  "rotation": [0.5, 0.5, 0.5, 0.5],
+  "scale": 0.01,
+  "root_height_offset": 0.16,
+  "trim_frame_beg": -1,
+  "trim_frame_end": -1,
+
+  "align_feet_to_ground": true,
+  "foot_clearance": 0.04,
+  "foot_joints": ["left_ankle_pitch_link", "right_ankle_pitch_link"]
+}
