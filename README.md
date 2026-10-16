@@ -126,14 +126,14 @@ Create the output directories and run the motion-retargeting script:
 
 ```bash
 cd ASE/ase/poselib
-mkdir -p pkl retarget_npy
-python retarget_motion_h1_all.py
+mkdir -p pkl g1_retarget_npy
+python retarget_motion_g1.py
 ```
 
 The retargeted humanoid motions will be saved to:
 
 ```text
-ASE/ase/poselib/data/retarget_npy
+ASE/ase/poselib/data/g1_retarget_npy
 ```
 
 These retargeted motions are used as reference motions for subsequent humanoid policy learning.
