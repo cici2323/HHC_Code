@@ -103,7 +103,7 @@ Data preparation covers RGB observations, human/object masks, SMPL body represen
 
 ### Human-to-Humanoid Motion Retargeting
 
-The human-to-humanoid motion retargeting pipeline is adopted from [ExBody2](https://github.com/edpsw/exbody2). Human motion sequences are first imported into the PoseLib-compatible format and then retargeted to generate humanoid reference motions.
+Human motion sequences are first imported into the PoseLib-compatible format and then retargeted to generate humanoid reference motions.
 
 **1. Import motions**
 
