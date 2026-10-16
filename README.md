@@ -136,7 +136,7 @@ The retargeted humanoid motions will be saved to:
 ASE/ase/poselib/data/g1_retarget_npy
 ```
 
-These retargeted motions are used as reference motions for subsequent humanoid policy learning.
+These retargeted motions are used as reference motions for subsequent humanoid collaborative policy learning.
 
 **Data access.** As stated in the paper, the complete raw and processed research data are available from the corresponding author upon reasonable request. A small set of sample data is included in this repository to facilitate code testing and demonstration. Please note that these samples represent only a subset of the data used in the study; access to the complete datasets can be requested separately.
 
